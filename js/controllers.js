@@ -1,5 +1,8 @@
-app.controller('LoginCtrl', function($scope,$state,$ionicPopup) {
-
+app.controller('LoginCtrl', function($scope,$state,$ionicPopup,loader,$timeout) {
+  loader.showWait();
+  $timeout(function () {
+    loader.hideWait();
+  }, 2000);
   $scope.logindata = {uname:"ra@gmail.com",pwd:"qwerty1"};
   $scope.login = function(){
     if($scope.logindata.uname=="ra@gmail.com" && $scope.logindata.pwd=="qwerty"){
