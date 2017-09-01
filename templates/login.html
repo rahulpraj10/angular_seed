@@ -1,15 +1,18 @@
 <ion-view style="" id="page7" title="Login" hide-nav-bar="true">
     <ion-content padding="true" class="manual-ios-statusbar-padding">
-        <form style="" class="list">
+	<div layout="row" layout-xs="column" layout-align="center center" style="margin: 10vw;">
+	  <div flex>
             <div style="width: 284px; height: 36px;" class="spacer"></div>
             <div>
                 <img style="display: block; margin-left: auto; margin-right: auto;" src="img/login-icon.png" height="35%" width="70%">
             </div>
-            <div>
             <br/>
             <br/>
-            <label class="item" style="font-size: large;text-align: center;"><b><i class="icon ion-android-locate"> Customer Service</i></b></label>
-            </div>
+	  </div>
+	  <div flex>
+        <form style="" class="list">
+
+            <label class="item" style="font-size: large;text-align: center;"><b><i class="icon ion-android-locate">  Product Configurator</i></b></label>
             <div style="width: 284px; height: 60px;" class="spacer"></div>
             <ion-list style="">
                 <label style="" name="uname" class="item item-input">
@@ -25,6 +28,8 @@
             <a class="button button-positive  button-block icon ion-android-send" id="login-button6" ng-click="login()"></a>
             <a class="button button-positive  button-block button-clear" id="login-button7" ui-sref="signup">Or create an account</a>
             <a class="button button-full button-positive icon ion-ios-location" ui-sref="page2"></a>
-        </form>
+        </form>		
+	  </div>
+	</div>
     </ion-content>
 </ion-view>
